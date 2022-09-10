@@ -29,8 +29,7 @@ int main(void)
 		}
 		d++;
 	}
-	putchar('|n');
+	putchar('\n');
 
 	return (0);
 }
-
