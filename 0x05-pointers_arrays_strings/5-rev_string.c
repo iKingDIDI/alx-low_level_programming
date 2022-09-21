@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	while (*(s + len) != '\0')
 	{
-		1en++;
+		len++;
 	}
 	length = len;
 	len--;
@@ -22,6 +22,6 @@ void rev_string(char *s)
 		c = *(s + i);
 		*(s + i) = *(s + len);
 		*(s + len) = c;
-		1en--;
+		len--;
 	}
 }
