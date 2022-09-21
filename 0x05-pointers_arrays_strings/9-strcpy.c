@@ -5,8 +5,6 @@
  *
  * Return: char
  */
-
-
 char *_strcpy(char *dest, char *src)
 {
 	int len = 0;
@@ -14,7 +12,7 @@ char *_strcpy(char *dest, char *src)
 	while (*(src + len) != '\0')
 	{
 		*(dest + len) = *(src + len);
-		1en++;
+		len++;
 	}
 	*(dest + len) = *(src + len);
 
