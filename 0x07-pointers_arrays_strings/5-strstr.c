@@ -2,7 +2,7 @@
 
 /**
  * _strstr - finds the first occurrence of the substring needle
- * in the string haystack
+ *  in the string haystack
  *
  * @haystack: string to work on
  * @needle: substring to match
@@ -20,13 +20,15 @@ char *_strstr(char *haystack, char *needle)
 		{
 			for (j = 1; needle[j] != '\0'; j++)
 			{
-				match = 0;
-				break;
+				if (needle[j] != haystack[i + j])
+				{
+					match = 0;
+					break;
+				}
+				match = 1;
 			}
-			match = 1;
-		}
-		if (match)
-			return (haystack + i);
+			if (match)
+				return (haystack + i);
 		}
 	}
 	return (NULL);
